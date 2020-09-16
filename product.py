@@ -7,7 +7,7 @@ class Product:
         self.setAmount(amount)
     #product test view
     def __repr__(self):
-        return "name: {} \n price: {} \n amount: {}".format(self.getName(), self.getPrice(), self.getAmount())
+        return ("name: {} \nprice: {} \namount: {}".format(self.getName(), self.getPrice(), self.getAmount()))
     # setters
     def setName(self, name):
         self.__name = name
@@ -16,9 +16,9 @@ class Product:
     def setAmount(self, amount):
         self.__amount = amount
     #gettest
-    def getName(self, name):
-        self.__name = name
-    def getPrice(self, price):
-        self.__price = price
-    def getAmount(self, amount):
-        self.__amount = amount
+    def getName(self):
+        return (self.__name)
+    def getPrice(self):
+        return (self.__price)
+    def getAmount(self):
+        return (self.__amount)
